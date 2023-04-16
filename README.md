@@ -12,6 +12,8 @@
 Elite airlines project is a React app that displays a list of airlines from a JSON API. The list of airlines displays the name, country, and headquarters of each airline. The project uses React best practices and is responsive.
 This app that allows users to search for airlines and view information about each. The app is built using React, React Router, and Redux Toolkit, and uses a JSON API to retrieve its data.
 
+- Checkout the [Live Demo](https://elite-airlines.netlify.app/)
+
 ## Features
 - Display of Airlines: The app displays a list of airlines from a JSON file that includes information such as name, country, and headquarters of each airline.
 - Modal for More Information: When a user clicks on an airline, a modal opens that displays more information about the airline, including its logo, slogan, website, and the year it was established.

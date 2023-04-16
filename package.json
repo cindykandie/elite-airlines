@@ -1,0 +1,29 @@
+{
+  "name": "elite-airlines",
+  "version": "1.0.0",
+  "description": "- [Description](#description)\r - [Features](#features)\r - [Technical Details](#technical-details)\r - [Getting Started](#getting-started)\r - [Contributing](#contributing)\r - [Contact](#contact)",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.0",
+    "vite": "^4.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cindykandie/elite-airlines.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cindykandie/elite-airlines/issues"
+  },
+  "homepage": "https://elite-airlines.io/cindykandie"
+}
