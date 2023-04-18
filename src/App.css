@@ -6,15 +6,17 @@
     --BlackShade: #0f1020;
     --WhiteShade: #f8f7ff;
 }
-body{
-    font-family: 'Cabin', sans-serif;
-    padding: 1.25rem 0.75rem;
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Cabin', sans-serif;
+    position: relative;
+    min-height: 100vh;
+}
+
 h1, h2, h3{
     font-family: 'Playfair Display', serif;
     font-style: italic;
@@ -23,30 +25,33 @@ h1, h2, h3{
 .item-list{
     display: grid;
     grid-template-columns: auto;
-    gap: 1.8rem;
+    gap: 1.5rem;
+    margin: auto 0.5rem 1rem;
 }
 .item-container{
     border: 2px solid var(--MainColor);
     padding: 0.75rem;
-    border-radius: 0.7rem;
+    border-radius: 0.5rem;
     display: flex;
-    gap: 2.5rem;
     width: 100%;
-    max-width: 37.5rem;
+    max-width: 36.5rem;
     margin: auto;
 }
 .item-container img{
     width: 50%;
     height: 7.5rem;
+    margin-right: 1rem;
 }
 .item-container h3{
     font-weight: 700;
     font-style: normal;
+    margin: 0;
+    text-align: left;
 }
 .item-info{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
 }
 .item-container button{
     padding: 0.35rem 0.75rem;
@@ -57,29 +62,37 @@ h1, h2, h3{
     transition: all 0.7s ease-in-out;
     cursor: pointer;
     border-color: var(--MainColor);
-    width: 7rem;
+    width: fit-content;
+    margin: 0;
 }
 .item-container button:hover{
-    padding: 0.3rem 0.75rem;
     color: var(--WhiteShade);
     background-color: var(--MainColor);
-    border-radius: 5px;
 }
 
 .modal{
-    position: absolute;
+    position: fixed;
     background-color: #f8f7ff;
     padding: 1.5rem;
     border-radius: 10px;
     width: 100%;
     max-width: 37.5rem;
-    height: 120%;
+    height: 100%;
+    max-height: 100rem;
     top: 0;
-    box-shadow: 20px 45px 400px 200px rgba(47,25,95,8);
-    -webkit-box-shadow: 20px 45px 400px 200px rgba(47,25,95,8);
-    -moz-box-shadow: 20px 45px 400px 200px rgba(47,25,95,8);
-
+    left: 0;
+    right: 0;
+    overflow-y: auto;
 }
+@media screen and (min-width: 700px) {
+    .modal{
+        left: auto;
+        right: auto;
+        box-shadow: 20px 45px 400px 200px rgba(47,25,95,8);
+        -webkit-box-shadow: 20px 45px 400px 200px rgba(47,25,95,8);
+        -moz-box-shadow: 20px 45px 400px 200px rgba(47,25,95,8);
+    }
+  }
 
 .modal .close-btn{
     font-weight: 700;

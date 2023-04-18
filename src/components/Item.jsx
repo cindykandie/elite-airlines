@@ -24,7 +24,7 @@ const Item = ({ airline }) => {
           <p><span>Country: </span>{airline.country}</p>
           <p><span>Slogan: </span>{airline.slogan}</p>
           <p><span>Headquarters: </span>{airline.head_quaters}</p>
-          <p><span>Website: </span><a target="_blank" href={airline.website}>{airline.website}</a></p>
+          <p><span>Website: </span><a target="_blank" href={`https://${airline.website}`}>{airline.name}</a></p>
           <p><span>Established: </span>{airline.established}</p>
           </div>
         </Modal>
