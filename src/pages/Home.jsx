@@ -4,7 +4,7 @@ import data from "../data.json";
 
 function Home() {
   return (
-    <div className="item-list">
+    <div className="item-list" data-testid="home">
       {data.airlines.map((airline) => (
         <Item key={airline.id} airline={airline} />
       ))}

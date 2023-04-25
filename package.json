@@ -20,7 +20,8 @@
     "@vitejs/plugin-react": "^1.0.0",
     "gh-pages": "^5.0.0",
     "jest": "^29.5.0",
-    "vite": "^4.2.1"
+    "vite": "^4.2.1",
+    "vitest": "^0.30.1"
   },
   "repository": {
     "type": "git",
